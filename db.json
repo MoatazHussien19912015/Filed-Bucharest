@@ -1,0 +1,98 @@
+{
+  "credit_cards": [
+    {
+      "id": 912,
+      "CreditCardNumber": "1452365214523652",
+      "Holder": "someone",
+      "ExpirationDate": "2021-01-07T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": "12"
+    },
+    {
+      "id": 71,
+      "CreditCardNumber": "7856985214523658",
+      "Holder": "anonymous",
+      "ExpirationDate": "2021-01-22T00:00:00.000Z",
+      "SecurityCode": "",
+      "Amount": "456"
+    },
+    {
+      "id": 361,
+      "CreditCardNumber": "145289652374581",
+      "Holder": "john smith",
+      "ExpirationDate": "2021-01-19T00:00:00.000Z",
+      "SecurityCode": "456",
+      "Amount": "12000"
+    },
+    {
+      "id": 517,
+      "CreditCardNumber": "15121354132132",
+      "ExpirationDate": "2021-01-29T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 1
+    },
+    {
+      "id": 370,
+      "CreditCardNumber": "33242342343242",
+      "ExpirationDate": "2021-02-25T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 1
+    },
+    {
+      "id": 219,
+      "CreditCardNumber": "12321321312323",
+      "Holder": "SOMEONE ELSE",
+      "ExpirationDate": "2021-03-19T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 2
+    },
+    {
+      "id": 710,
+      "CreditCardNumber": "13213213213123",
+      "Holder": "anonymous",
+      "ExpirationDate": "2021-02-19T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 2
+    },
+    {
+      "id": 111,
+      "CreditCardNumber": "12312312323123",
+      "Holder": "YES THAT'S ME",
+      "ExpirationDate": "2021-01-22T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 123
+    },
+    {
+      "id": 317,
+      "CreditCardNumber": "12312312312323",
+      "Holder": "CASD",
+      "ExpirationDate": "2021-01-30T00:00:00.000Z",
+      "SecurityCode": "ada",
+      "Amount": 3
+    },
+    {
+      "id": 594,
+      "CreditCardNumber": "32423432423423",
+      "Holder": "SOMEONE YEAH",
+      "ExpirationDate": "2021-01-30T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 6
+    },
+    {
+      "id": 1,
+      "CreditCardNumber": "adsadasdasdq23",
+      "Holder": "ADAD",
+      "ExpirationDate": "2021-01-30T00:00:00.000Z",
+      "SecurityCode": "123",
+      "Amount": 4
+    },
+    {
+      "id": 316,
+      "CreditCardNumber": "123123213123as",
+      "Holder": "GHGHGHGH",
+      "ExpirationDate": "2021-05-19T00:00:00.000Z",
+      "SecurityCode": "232",
+      "Amount": 342
+    }
+  ]
+}

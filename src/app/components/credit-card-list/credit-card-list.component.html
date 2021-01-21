@@ -1,0 +1,10 @@
+
+<button (click)="add_credit_card()">Add Credit Card</button>
+<div class="grid-container">
+    <div *ngFor="let card of creditCards"  class="grid-item">
+     
+        <app-credit-card-item [creditCard]="card"></app-credit-card-item>
+    
+</div>
+</div>
+

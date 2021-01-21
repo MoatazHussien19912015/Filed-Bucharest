@@ -1,0 +1,72 @@
+
+<div class="container">
+<form class="" [formGroup]="form" (ngSubmit)="add_card()">
+
+  <div class="row">
+    <div class="col-25"><label>CreditCardNumber</label></div>
+    <div class="col-75"><input class="" type="text" formControlName="CreditCardNumber"></div>
+  </div>
+  <div style="background-color:rgba(255, 99, 71, 0.5);"
+    *ngIf="CreditCardNumber && CreditCardNumber.invalid && CreditCardNumber.touched">
+    <div *ngIf="CreditCardNumber.errors && CreditCardNumber.errors.required ">CreditCardNumber is Required</div>
+    <div *ngIf="CreditCardNumber.errors.maxlength || CreditCardNumber.errors.minlength"> 14 digits only required not
+      {{CreditCardNumber.errors.maxlength?CreditCardNumber.errors.maxlength.actualLength:CreditCardNumber.errors.minlength?
+          CreditCardNumber.errors.minlength.actualLength:null}}</div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-25"><label>Card Holder</label></div>
+    <div class="col-75"><input type="text" formControlName="Holder"></div>
+  </div>
+  <div style="background-color:rgba(255, 99, 71, 0.5);" *ngIf="Holder && Holder.invalid && Holder.touched">
+    <div *ngIf="Holder.errors && Holder.errors.required ">Card Holder is Required</div>
+    <div *ngIf="Holder.errors && Holder.errors.minlength "> Name can be at least 3 Characters</div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-25"> <label>ExpirationDate</label></div>
+    <div class="col-75"> <input class="" type="date" formControlName="ExpirationDate"> </div>
+
+
+  </div>
+  <div style="background-color:rgba(255, 99, 71, 0.5);"
+    *ngIf="ExpirationDate && ExpirationDate.invalid && ExpirationDate.touched">
+    <div *ngIf="ExpirationDate.errors && ExpirationDate.errors.required ">Expiration Date is Required</div>
+    <div *ngIf="ExpirationDate.errors && ExpirationDate.errors.outdated ">Expiration Date should be Newer than the
+      Current Date</div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-25"><label>SecurityCode</label></div>
+    <div class="col-75"> <input class="" type="text" formControlName="SecurityCode"></div>
+
+
+  </div>
+  <div style="background-color:rgba(255, 99, 71, 0.5);"
+    *ngIf="SecurityCode && SecurityCode.invalid && SecurityCode.touched">
+    <div *ngIf="SecurityCode.errors.maxlength || SecurityCode.errors.minlength"> 3 digits only required</div>
+  </div>
+
+  <div class="row">
+    <div class="col-25"><label>Amount</label></div>
+    <div class="col-75"> <input class="" type="number" formControlName="Amount"></div>
+
+
+  </div>
+  <div style="background-color:rgba(255, 99, 71, 0.5);" *ngIf="Amount && Amount.invalid && Amount.touched">
+    <div *ngIf="Amount.errors && Amount.errors.required ">Amount is Required</div>
+    <div *ngIf="Amount.errors && Amount.errors.min ">Amount can't be less than 1</div>
+
+  </div>
+
+
+
+
+  <button class="" type="submit" [disabled]="form.invalid">Submit</button>
+</form>
+</div>
+<div class="notification" [ngStyle]="{visibility:notification?'visible':'hidden'}">Credit Card has been added
+  successfully</div>
